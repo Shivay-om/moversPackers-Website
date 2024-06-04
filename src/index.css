@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container:hover .iconCard {
+    fill: #da0134;
+    fill-opacity: 1;
+}
+
+.iconCard {
+    fill: #da0134;
+    fill-opacity: 0.25;
+}
+
+.sachin::before {
+    content: 'huu';
+    /* position: absolute; */
+}
+
+/* src/App.css */
+.parent-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .child-div {
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  .parent-div::before,
+  .parent-div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Adjust the border width as needed */
+    background-color: #da0134; /* Border color */
+  }
+  
+  .parent-div::before {
+    left: 0;
+  }
+  
+  .parent-div::after {
+    right: 0;
+  }
+  
